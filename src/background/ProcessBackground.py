@@ -13,7 +13,7 @@ class ProcessBackground():
         # convert originale image to gray scale
         self.gray = cv2.cvtColor(self.img, cv2.COLOR_BGR2GRAY)
 
-        # reduce background noise using Gaussian Fillter
+        # reduce background noise using Gaussian Filter
         self.blur = cv2.GaussianBlur(self.gray, (KERNEL_SIZE, KERNEL_SIZE), 0)
 
         # convert to binary image
